@@ -1,10 +1,18 @@
-from datetime import date
+#!/usr/bin/env python3
 
-name = input('please, type your name: ')
+def main():
 
-week = ['Monday', 'Tuesday', 'Wednesday', 'Thrusday', 'Friday', 'Saturday', 'Sunday']
-today = week[date.today().weekday()]
+    from datetime import date
+
+    name = input('please, type your name: ')
+
+    week = ['Monday', 'Tuesday', 'Wednesday', 'Thrusday', 'Friday', 'Saturday', 'Sunday']
+    today = week[date.today().weekday()]
 
 
-print(f"Hello, {name}! Happy {today}!")
+    print(f"Hello, {name}! Happy {today}!")
 
+
+if __name__ == "__main__":
+
+    main()
