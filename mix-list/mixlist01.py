@@ -1,0 +1,35 @@
+#!/usr/bin/env python3
+
+def main():
+
+    # create a list containing three items
+    my_list = [ "192.168.0.5", 5060, "UP" ]
+
+    # display the first item in the list
+    print("The first item in the list (IP): " + my_list[0] )
+
+    # display the second item in the list
+    print("The second item in the list (port): " + str(my_list[1]) )
+
+    # dsplay the third item in the list 
+    print("The last item in the list (state): " + my_list[2] )
+
+
+    # display only the IP addresses to the screen.
+    iplist = [ 5060, "80", 55, "10.0.0.1", "10.20.30.1", "ssh"]
+
+    print(f"The IP addresses are {iplist[3]}, {iplist[4]}.")
+
+
+    # display only the IP addresses in string  using slice 
+    ips = iplist[3:5]
+    ips_str = ', '.join(ips)
+
+    print(f"The IP addresses are {ips_str}!!")
+
+# calling main() using this techique allows others to import your code, preventing running it twice? 
+
+if __name__ == "__main__":
+    main()
+
+
